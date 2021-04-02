@@ -2,16 +2,19 @@
 <html>
 <title>SPF</title>
 <body>
-<script> var password = window.prompt("Scratch Username?")</script>
+<script> var user = window.prompt("Scratch Username?")</script>
 <h2>scratch profile finder</h2>
 
 <p id="demo"></p>
-<iframe id="efreme" href="" width="600"></iframe>
+  <p id="link"></p>
+<p id="link" href="" width="600"></p>
 
 <script>
-var cars = ["Finished!"];
-document.getElementById("demo").innerHTML = cars;
-document.getElementById("efreme").href = "https://scratch.mit.edu/users/" +  password + "/";
+var status = ["User Found! "];
+var link = ["<a>Click here to go to the user</a>"];
+document.getElementById("demo").innerHTML = status;
+  document.getElementById("link").innerHTML = link;
+document.getElementById("link").href = "https://scratch.mit.edu/users/" +  user + "/";
 </script>
 
 </body>
